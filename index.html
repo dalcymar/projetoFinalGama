@@ -5,41 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Pessoas</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Seja bem vindo(a)</h1>
+    <header>
+        <div class="cabecalho">
+            <div id="perfil">
+                <p id="cab">JobsNet</p>
+            </div>
+            <ul>HOME</ul>
+            <ul>QUEM SOMOS</ul>
+            <ul>CONTATOS</ul>
+        </div>
+
+    </header>
+    <h2>Seja bem vindo(a)</h2>
     <p>
         Cadastre hoje mesmo o seu currículo em nosso banco de dados e seja visto por milhares de empregadores
         na área de tecnologia! Preencha o formulário abaixo com todos os dados corretamente e em breve 
         entraremos em contato com você.
     </p>
     <form action="">
-        <fieldset id="clinte"><legend>Cliente</legend>
-            <label for="nome completo">Nome Completo</label>
-            <input type="text" name="nome completo" required>
-            <label for="dataNascimento">Data de Nascimento</label>
-            <input type="text" name="dataNascimento" required>
-            <label for="profissao">Profissão</label>
-            <input type="text" name="profissao" required>
-            <label for="nome">Estado Civil</label>
-            <input type="text" name="nome completo" required>
-            <label for="nome">Sexo</label>
-            <input type="text" name="nome completo" required>
-        </fieldset>
+        <h3><tr><fieldset class="cliente"><legend>Cliente</legend>
+            <label for="nome completo">*Nome Completo:</label>
+            <input type="text" name="nome completo" id="nome" required>
 
-        <fieldset id="clinte"><legend>Endereço</legend>
-            <label for="nome completo">Nome Completo</label>
+            <label for="nome">*CPF:</label>
             <input type="text" name="nome completo" required>
-            <label for="dataNascimento">Data de Nascimento</label>
-            <input type="text" name="dataNascimento" required>
-            <label for="profissao">Profissão</label>
+
+            <label for="nome">Email</label>
+            <input type="email" name="nome completo" required>
+
+            <label for="profissao">*Profissão:</label>
             <input type="text" name="profissao" required>
+
+            <label for="profissao">*Data de nascimento:</label>
+            <input type="date" name="dataNascimento" required>
+
             <label for="nome">Estado Civil</label>
             <input type="text" name="nome completo" required>
+
             <label for="nome">Sexo</label>
             <input type="text" name="nome completo" required>
-        </fieldset>
+        </h3></tr></fieldset><br/><br/>
+
+        <fieldset id="endereco"><legend>Endereço</legend>
+            <label for="nome completo">*Endereço:</label>
+            <input type="text" name="nome completo" required>
+
+            <label for="dataNascimento">*Bairro:</label>
+            <input type="text" name="dataNascimento" required>
+
+            <label for="profissao">*Cidade:</label>
+            <input type="text" name="profissao" required>
+
+            <label for="nome">*Estado:</label>
+            <input type="text" name="nome completo" required>
+
+            <label for="nome">*CEP:</label>
+            <input type="text" name="nome completo" required>
+
+            <label for="nome">Telefone:</label>
+            <input type="tel" name="nome completo">
+
+            <label for="nome">*Celular:</label>
+            <input type="text" name="nome completo" required>
+
+        </fieldset><br/>
+        <input type="submit" value="Enviar" name="enviar" id="enviar">
     </form>
 </body>
 </html>

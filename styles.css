@@ -2,22 +2,29 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #003;
+    font-family: 'Poppins', sans-serif;
 }
 
-#cab {
-    margin-left: 30px;
-    width: 200px;
-    height: 100px;
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #f8f;
+}
+
+footer {
     text-align: center;
-    padding: 22px;
-    font-size: 35px;
-    background-color: #680010;
-    color: rgb(182, 205, 50);
+    background: #333303;
 }
 
-.cabecalho {
-    display: flex;
+footer p {
+    font-size: 18px;
+    color: tomato;
+    padding: 3px;
 }
 
 h2 {
@@ -35,30 +42,68 @@ body {
 
 }
 
-.cliente {
-    font-size: 30px;
-    margin: 10px 10px;
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     padding: 10px;
+    background-color: #333303;
+    border-bottom: 10px ridge rgb(177, 205, 50);
 }
 
-.cliente input {
-    width: 50%;
-    font-size: 25px;
-}
-#endereco {
-    font-size: 20px;
-    margin: 10px 10px;
-    padding: 10px;
+nav ul {
+    display: flex;
 }
 
-input {
+nav ul li {
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    transition: 400ms;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.container {
     text-align: center;
-    font-size: 25px;
-    border: 1px solid #000;
+}
+
+.container .candidato {
+    font-size: 30px;
+    text-align: left;
+    margin: 10px;
+    padding: 10PX;
+}
+
+.container .candidato label {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+#nome {
+    width: 300px;
+}
+
+#email {
+    width: 300px;
+}
+
+span {
+    color: red;
+    margin-right: 0%;
 }
 
 #enviar {
+    text-align: center;
+    width: 100px;
+    height: auto;
+    font-size: 25px;
     padding: 5px;
+    margin: 10px;
     border-radius: 8px;
     background: #008800;
     font: bold;

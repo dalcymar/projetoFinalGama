@@ -5,74 +5,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Pessoas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="cabecalho">
-            <div id="perfil">
-                <p id="cab">JobsNet</p>
-            </div>
-            <ul>HOME</ul>
-            <ul>QUEM SOMOS</ul>
-            <ul>CONTATOS</ul>
+    <nav>
+        <div>
+            <img src="./imagens/jobsnethm.png" alt="JobsNet">
         </div>
+        <ul>
+            <li><a target="_blank" href="https://home">HOME</a></li>
+            <li><a target="_blank" href="https://quemsomos">QUEM SOMOS</a></li>
+            <li><a target="_blank" href="https://contatos">CONTATOS</a></li>
+        </ul>
+    </nav>
 
-    </header>
-    <h2>Seja bem vindo(a)</h2>
-    <p>
-        Cadastre hoje mesmo o seu currículo em nosso banco de dados e seja visto por milhares de empregadores
-        na área de tecnologia! Preencha o formulário abaixo com todos os dados corretamente e em breve 
-        entraremos em contato com você.
-    </p>
-    <form action="">
-        <h3><tr><fieldset class="cliente"><legend>Cliente</legend>
-            <label for="nome completo">*Nome Completo:</label>
-            <input type="text" name="nome completo" id="nome" required>
+    <Header>
+        <h2>Seja bem vindo(a)</h2>
+        <p>
+            Cadastre hoje mesmo o seu currículo em nosso banco de dados e seja visto por milhares de empregadores
+            na área de tecnologia! Preencha o formulário abaixo com todos os dados corretamente e em breve 
+            entraremos em contato com você.
+        </p>
+    </Header>
 
-            <label for="nome">*CPF:</label>
-            <input type="text" name="nome completo" required>
+    <form action="" class="container">
+        <h3><fieldset class="candidato"><legend>Cliente</legend>
+            
+                <label>
+                    <label for="nome completo">Nome Completo:</label>
+                    <span class="cpObrigatorio">*</span>
+                </label>
+                <label>
+                    <input type="text" name="nome completo" id="nome" placeholder="nome completo" required>
+                </label>
 
-            <label for="nome">Email</label>
-            <input type="email" name="nome completo" required>
+                <label>
+                    <label for="nome">Cargo Pretendido:</label>
+                    <span class="cpObrigatorio">*</span>
+                </label>
+                <label>
+                    <input type="text" name="cargo" required>
+                </label>
 
-            <label for="profissao">*Profissão:</label>
-            <input type="text" name="profissao" required>
+                <label>
+                    <label for="nome">Email:</label>
+                    <span class="cpObrigatorio">*</span>
+                </label>
+                <label>
+                    <input type="email" name="email" id="email" required>
+                </label>
 
-            <label for="profissao">*Data de nascimento:</label>
-            <input type="date" name="dataNascimento" required>
+                <label>
+                    <label for="profissao">Data de nascimento:</label>
+                    <span class="cpObrigatorio">*</span>
+                </label>
+                <label>
+                    <input type="date" name="dataNascimento" required>
+                </label>
 
-            <label for="nome">Estado Civil</label>
-            <input type="text" name="nome completo" required>
+                <label>Estado Civil:</label>
+                <label>Solteiro<input type="radio" name="estCivil">
+                    Casado<input type="radio" name="estCivil">
+                    Divorciado<input type="radio" name="estCivil">
+                    Outros<input type="radio" name="estCivil">
+                </label>
+                
+                <label for="sexo">Sexo:</label>
+                <label>M<input type="radio" name="sexo">
+                    F<input type="radio" name="sexo">
+                </label>
+        </h3></fieldset><br/><br/>
 
-            <label for="nome">Sexo</label>
-            <input type="text" name="nome completo" required>
-        </h3></tr></fieldset><br/><br/>
+        <h3><fieldset class="candidato"><legend>Endereço</legend>
+            
+            <label for="endereco">Endereço:</label>
+            <span class="cpObrigatorio">*</span>
+            <input type="text" name="endereco" required>
 
-        <fieldset id="endereco"><legend>Endereço</legend>
-            <label for="nome completo">*Endereço:</label>
-            <input type="text" name="nome completo" required>
+            <label for="bairro">Bairro:</label>
+            <span class="cpObrigatorio">*</span>
+            <input type="text" name="bairro" required>
 
-            <label for="dataNascimento">*Bairro:</label>
-            <input type="text" name="dataNascimento" required>
+            <label for="cidade">Cidade:</label>
+            <span class="cpObrigatorio">*</span>
+            <input type="text" name="cidade" required>
 
-            <label for="profissao">*Cidade:</label>
-            <input type="text" name="profissao" required>
-
-            <label for="nome">*Estado:</label>
-            <input type="text" name="nome completo" required>
-
-            <label for="nome">*CEP:</label>
-            <input type="text" name="nome completo" required>
+            <label for="nome">Estado:
+                <select name="estado">
+                    <option>Pernambuco</option>
+                    <option>Paraíba</option>
+                    <option>Alagoas</option>
+                    <option>Sergipe</option>
+                    <option>Fortaleza</option>
+                    <option>Rio Grande do Norte</option>
+                    <option>Bahia</option>
+                    <option>Maranhão</option>
+                    <option>Piauí</option>
+                    <option>Tocantins</option>
+                    <option>Minas Gerais</option>
+                    <option>Goias</option>
+                    <option>Rio de Janeiro</option>
+                    <option>São Paulo</option>
+                    <option>Santa Catarina</option>
+                    <option>Rio Grande do Sul</option>
+                    <option>Mato Grosso</option>
+                    <option>Distrito Federal</option>
+                    <option>Roraima</option>
+                    <option>Rodônia</option>
+                </select>
+            </label>
+    
+            <label for="cep">CEP:</label>
+            <span class="cpObrigatorio">*</span>
+            <input type="text" name="cep" placeholder="Apenas números" required>
 
             <label for="nome">Telefone:</label>
-            <input type="tel" name="nome completo">
+            <span class="cpObrigatorio">*</span>
+            <select name="telefone" id="fone">
+                <option >Escolha o tipo de fone</option>
+                <option >Celular</option>
+                <option >Residencial</option>
+                <option >Comercial</option>
+            </select>
 
-            <label for="nome">*Celular:</label>
-            <input type="text" name="nome completo" required>
+            <label for="nome">Número:</label>
+            <input type="text" name="fone" placeholder="DDD e número" required>
 
-        </fieldset><br/>
-        <input type="submit" value="Enviar" name="enviar" id="enviar">
+        </h3></fieldset><br/>
+        <button type="submit" name="enviar" id="enviar">Enviar</button>
     </form>
+    <footer>
+        <p>&copy; Desenvolvido por Dalcimar Luiz durante evento da Start Tech da Gama Acadamy</p>
+    </footer>
 </body>
 </html>
